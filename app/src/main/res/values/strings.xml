@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ShelfAware</string>
+    <string name="settings">Button</string>
+    <string name="strRecentView">Recently viewed:</string>
+    <string name="SettingsImage">settings image</string>
+    <string name="SearchIcon">search icon</string>
+    <string name="ShelfImage">shelf image</string>
+    <string name="TempBookCover">book cover</string>
+    <string name="SectionSplit">section split</string>
+    <string name="RecentlyViewedText">Recently viewed:</string>
+    <string name="EditTextSearch">Search</string>
+    <string name="BackButton">back</string>
+    <string name="TitleRadioButton">Title</string>
+    <string name="TagsRadioButton">Tag(s)</string>
+    <string name="SettingsText">Settings</string>
+    <string name="LightModeText">Light Mode:</string>
+    <string name="ListModeText">List Mode:</string>
+    <string name="UnknownText">\??????</string>
+    <string name="CreditToText">Credits to:</string>
+    <string name="TempText">Big list of librarys used and APIs</string>
+    <string name="DarkRadioButton">Dark</string>
+    <string name="LightRadioButton">Light</string>
+    <string name="RatingRadioButton">Rating</string>
+    <string name="AlphabRadioButton">Alphabetical</string>
+    <string name="TempRadioButton">Options</string>
+    <string name="BookTitleText">Title of book</string>
+    <string name="AuthorNameText">Author name</string>
+    <string name="tagButton" />
+    <string name="DescriptionText">Description:</string>
+    <string name="DescriptionBoxText">Information here about the plot and basic description of the book, written by the Author or reviews and feedback by readers and reviewers</string>
+    <string name="RecommendMoreButton">Recommend More!</string>
+    <string name="PurchaseButton">Purchase</string>
+    <string name="MoreInfoButton">More info</string>
+    <string name="ShareButton">Share</string>
+</resources>
