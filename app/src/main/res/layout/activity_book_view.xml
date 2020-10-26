@@ -7,7 +7,7 @@
     tools:context=".BookViewActivity">
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/IVbackButton"
         android:layout_width="54dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/backbutton" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/IVbookCover"
         android:layout_width="151dp"
         android:layout_height="237dp"
         android:layout_marginStart="16dp"
@@ -27,83 +27,83 @@
         android:layout_marginTop="16dp"
         android:contentDescription="@string/TempBookCover"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/IVbackButton"
         app:srcCompat="@drawable/bookcover" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/TVtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="@string/BookTitleText"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
-        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+        app:layout_constraintStart_toEndOf="@+id/IVbookCover"
+        app:layout_constraintTop_toTopOf="@+id/IVbookCover" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/TVauthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:text="@string/AuthorNameText"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintStart_toEndOf="@+id/IVbookCover"
+        app:layout_constraintTop_toBottomOf="@+id/TVtitle" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/BtnTag1"
         android:layout_width="63dp"
         android:layout_height="37dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/tagButton"
         android:text="@string/tagButton"
-        app:layout_constraintStart_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintStart_toStartOf="@+id/TVauthor"
+        app:layout_constraintTop_toBottomOf="@+id/TVauthor" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/BtnTag2"
         android:layout_width="63dp"
         android:layout_height="37dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:contentDescription="@string/tagButton"
         android:text="@string/tagButton"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="@+id/button5" />
+        app:layout_constraintStart_toEndOf="@+id/BtnTag1"
+        app:layout_constraintTop_toTopOf="@+id/BtnTag1" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/BtnTag3"
         android:layout_width="63dp"
         android:layout_height="37dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:contentDescription="@string/tagButton"
         android:text="@string/tagButton"
-        app:layout_constraintStart_toEndOf="@+id/button6"
-        app:layout_constraintTop_toTopOf="@+id/button5" />
+        app:layout_constraintStart_toEndOf="@+id/BtnTag2"
+        app:layout_constraintTop_toTopOf="@+id/BtnTag1" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/BtnTag4"
         android:layout_width="63dp"
         android:layout_height="37dp"
         android:contentDescription="@string/tagButton"
         android:text="@string/tagButton"
-        app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintStart_toStartOf="@+id/BtnTag1"
+        app:layout_constraintTop_toBottomOf="@+id/BtnTag1" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/TVdescription1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/DescriptionText"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+        app:layout_constraintStart_toStartOf="@+id/IVbookCover"
+        app:layout_constraintTop_toBottomOf="@+id/IVbookCover" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/TVdescription2"
         android:layout_width="379dp"
         android:layout_height="203dp"
         android:layout_marginTop="12dp"
@@ -112,10 +112,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/TVdescription1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/BtnRecommend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -123,40 +123,40 @@
         android:layout_marginTop="16dp"
         android:text="@string/RecommendMoreButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/TVdescription2" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/BtnPurchase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/PurchaseButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/BtnInfo"
+        app:layout_constraintTop_toTopOf="@+id/BtnShare" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/BtnInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/MoreInfoButton"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/BtnPurchase"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="@+id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/BtnShare"
+        app:layout_constraintTop_toTopOf="@+id/BtnShare" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/BtnShare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/ShareButton"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/BtnInfo"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/BtnRecommend" />
 </androidx.constraintlayout.widget.ConstraintLayout>

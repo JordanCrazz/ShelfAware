@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/IVlogo"
         android:layout_width="378dp"
         android:layout_height="202dp"
         android:layout_marginTop="16dp"
@@ -20,34 +20,34 @@
         tools:src="@drawable/logoplaceholder" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/IBsettings"
         android:layout_width="172dp"
         android:layout_height="173dp"
         android:contentDescription="@string/SettingsImage"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintBottom_toTopOf="@+id/IVpartition2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/IBsearch"
+        app:layout_constraintTop_toBottomOf="@+id/IVlogo"
         app:layout_constraintVertical_bias="0.312"
         app:srcCompat="@drawable/tansettingsicon"
         tools:srcCompat="@drawable/tansettingsicon" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/IBsearch"
         android:layout_width="179dp"
         android:layout_height="172dp"
         android:background="#FFFFFF"
         android:contentDescription="@string/SearchIcon"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintBottom_toBottomOf="@+id/IBsettings"
+        app:layout_constraintEnd_toStartOf="@+id/IBsettings"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/tansearch2"
         tools:srcCompat="@drawable/tansearch2" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/IVshelf"
         android:layout_width="418dp"
         android:layout_height="104dp"
         android:layout_marginBottom="16dp"
@@ -58,81 +58,81 @@
         app:srcCompat="@drawable/shelf" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/IVcover1"
         android:layout_width="118dp"
         android:layout_height="148dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:contentDescription="@string/TempBookCover"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="@+id/IVcover2"
+        app:layout_constraintEnd_toStartOf="@+id/IVcover2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/IVshelf"
         app:srcCompat="@drawable/bookcover"
         tools:src="@drawable/bookcover" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/IVcover2"
         android:layout_width="122dp"
         android:layout_height="145dp"
         android:layout_marginBottom="32dp"
         android:contentDescription="@string/TempBookCover"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintBottom_toBottomOf="@+id/IVshelf"
+        app:layout_constraintEnd_toStartOf="@+id/IVcover3"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/IVcover1"
         app:srcCompat="@drawable/bookcover"
         tools:src="@drawable/bookcover" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/IVcover3"
         android:layout_width="131dp"
         android:layout_height="142dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:contentDescription="@string/TempBookCover"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="@+id/IVcover2"
+        app:layout_constraintEnd_toStartOf="@+id/IVshelf"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/IVcover2"
         app:srcCompat="@drawable/bookcover"
         tools:src="@drawable/bookcover" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/IVpartition1"
         android:layout_width="223dp"
         android:layout_height="45dp"
         android:contentDescription="@string/SectionSplit"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintBottom_toBottomOf="@+id/IVpartition2"
+        app:layout_constraintEnd_toStartOf="@+id/IVpartition2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/shelf" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/IVpartition2"
         android:layout_width="223dp"
         android:layout_height="45dp"
         android:layout_marginBottom="92dp"
         android:contentDescription="@string/SectionSplit"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/IVshelf"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/IVpartition1"
         app:srcCompat="@drawable/shelf" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/TVrecentView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/RecentlyViewedText"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintBottom_toBottomOf="@+id/IVpartition1"
+        app:layout_constraintEnd_toEndOf="@+id/IVpartition1"
+        app:layout_constraintStart_toStartOf="@+id/IVpartition1"
+        app:layout_constraintTop_toTopOf="@+id/IVpartition1"
         app:layout_constraintVertical_bias="0.38"
         tools:text="@string/strRecentView" />
 
