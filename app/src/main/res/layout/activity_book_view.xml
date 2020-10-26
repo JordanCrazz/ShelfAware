@@ -6,157 +6,169 @@
     android:layout_height="match_parent"
     tools:context=".BookViewActivity">
 
-    <ImageView
-        android:id="@+id/IVbackButton"
-        android:layout_width="54dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/BackButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbutton" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <ImageView
-        android:id="@+id/IVbookCover"
-        android:layout_width="151dp"
-        android:layout_height="237dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/TempBookCover"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IVbackButton"
-        app:srcCompat="@drawable/bookcover" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".BookViewActivity">
 
-    <TextView
-        android:id="@+id/TVtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="@string/BookTitleText"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/IVbookCover"
-        app:layout_constraintTop_toTopOf="@+id/IVbookCover" />
+            <ImageView
+                android:id="@+id/IVbackButton"
+                android:layout_width="54dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/BackButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/backbutton" />
 
-    <TextView
-        android:id="@+id/TVauthor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/AuthorNameText"
-        app:layout_constraintStart_toEndOf="@+id/IVbookCover"
-        app:layout_constraintTop_toBottomOf="@+id/TVtitle" />
+            <ImageView
+                android:id="@+id/IVbookCover"
+                android:layout_width="151dp"
+                android:layout_height="237dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/TempBookCover"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/IVbackButton"
+                app:srcCompat="@drawable/bookcover" />
 
-    <Button
-        android:id="@+id/BtnTag1"
-        android:layout_width="63dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/tagButton"
-        android:text="@string/tagButton"
-        app:layout_constraintStart_toStartOf="@+id/TVauthor"
-        app:layout_constraintTop_toBottomOf="@+id/TVauthor" />
+            <TextView
+                android:id="@+id/TVtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/BookTitleText"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/IVbookCover"
+                app:layout_constraintTop_toTopOf="@+id/IVbookCover" />
 
-    <Button
-        android:id="@+id/BtnTag2"
-        android:layout_width="63dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:contentDescription="@string/tagButton"
-        android:text="@string/tagButton"
-        app:layout_constraintStart_toEndOf="@+id/BtnTag1"
-        app:layout_constraintTop_toTopOf="@+id/BtnTag1" />
+            <TextView
+                android:id="@+id/TVauthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/AuthorNameText"
+                app:layout_constraintStart_toEndOf="@+id/IVbookCover"
+                app:layout_constraintTop_toBottomOf="@+id/TVtitle" />
 
-    <Button
-        android:id="@+id/BtnTag3"
-        android:layout_width="63dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:contentDescription="@string/tagButton"
-        android:text="@string/tagButton"
-        app:layout_constraintStart_toEndOf="@+id/BtnTag2"
-        app:layout_constraintTop_toTopOf="@+id/BtnTag1" />
+            <Button
+                android:id="@+id/BtnTag1"
+                android:layout_width="63dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/tagButton"
+                android:text="@string/tagButton"
+                app:layout_constraintStart_toStartOf="@+id/TVauthor"
+                app:layout_constraintTop_toBottomOf="@+id/TVauthor" />
 
-    <Button
-        android:id="@+id/BtnTag4"
-        android:layout_width="63dp"
-        android:layout_height="37dp"
-        android:contentDescription="@string/tagButton"
-        android:text="@string/tagButton"
-        app:layout_constraintStart_toStartOf="@+id/BtnTag1"
-        app:layout_constraintTop_toBottomOf="@+id/BtnTag1" />
+            <Button
+                android:id="@+id/BtnTag2"
+                android:layout_width="63dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:contentDescription="@string/tagButton"
+                android:text="@string/tagButton"
+                app:layout_constraintStart_toEndOf="@+id/BtnTag1"
+                app:layout_constraintTop_toTopOf="@+id/BtnTag1" />
 
-    <TextView
-        android:id="@+id/TVdescription1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/DescriptionText"
-        app:layout_constraintStart_toStartOf="@+id/IVbookCover"
-        app:layout_constraintTop_toBottomOf="@+id/IVbookCover" />
+            <Button
+                android:id="@+id/BtnTag3"
+                android:layout_width="63dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:contentDescription="@string/tagButton"
+                android:text="@string/tagButton"
+                app:layout_constraintStart_toEndOf="@+id/BtnTag2"
+                app:layout_constraintTop_toTopOf="@+id/BtnTag1" />
 
-    <TextView
-        android:id="@+id/TVdescription2"
-        android:layout_width="379dp"
-        android:layout_height="203dp"
-        android:layout_marginTop="12dp"
-        android:background="#DDDADA"
-        android:text="@string/DescriptionBoxText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVdescription1" />
+            <Button
+                android:id="@+id/BtnTag4"
+                android:layout_width="63dp"
+                android:layout_height="37dp"
+                android:contentDescription="@string/tagButton"
+                android:text="@string/tagButton"
+                app:layout_constraintStart_toStartOf="@+id/BtnTag1"
+                app:layout_constraintTop_toBottomOf="@+id/BtnTag1" />
 
-    <Button
-        android:id="@+id/BtnRecommend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/RecommendMoreButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVdescription2" />
+            <TextView
+                android:id="@+id/TVdescription1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/DescriptionText"
+                app:layout_constraintStart_toStartOf="@+id/IVbookCover"
+                app:layout_constraintTop_toBottomOf="@+id/IVbookCover" />
 
-    <Button
-        android:id="@+id/BtnPurchase"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/PurchaseButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/BtnInfo"
-        app:layout_constraintTop_toTopOf="@+id/BtnShare" />
+            <TextView
+                android:id="@+id/TVdescription2"
+                android:layout_width="379dp"
+                android:layout_height="203dp"
+                android:layout_marginTop="12dp"
+                android:background="#DDDADA"
+                android:text="@string/DescriptionBoxText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVdescription1" />
 
-    <Button
-        android:id="@+id/BtnInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="@string/MoreInfoButton"
-        app:layout_constraintEnd_toStartOf="@+id/BtnPurchase"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/BtnShare"
-        app:layout_constraintTop_toTopOf="@+id/BtnShare" />
+            <Button
+                android:id="@+id/BtnRecommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/RecommendMoreButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVdescription2" />
 
-    <Button
-        android:id="@+id/BtnShare"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="@string/ShareButton"
-        app:layout_constraintEnd_toStartOf="@+id/BtnInfo"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnRecommend" />
+            <Button
+                android:id="@+id/BtnPurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PurchaseButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/BtnInfo"
+                app:layout_constraintTop_toTopOf="@+id/BtnShare" />
+
+            <Button
+                android:id="@+id/BtnInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/MoreInfoButton"
+                app:layout_constraintEnd_toStartOf="@+id/BtnPurchase"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/BtnShare"
+                app:layout_constraintTop_toTopOf="@+id/BtnShare" />
+
+            <Button
+                android:id="@+id/BtnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/ShareButton"
+                app:layout_constraintEnd_toStartOf="@+id/BtnInfo"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BtnRecommend" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

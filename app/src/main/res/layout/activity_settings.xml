@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/IVbackButton"
-        android:layout_width="64dp"
-        android:layout_height="68dp"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
