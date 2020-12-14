@@ -123,6 +123,7 @@
                 android:layout_marginTop="12dp"
                 android:background="#DDDADA"
                 android:isScrollContainer="true"
+                android:nestedScrollingEnabled="true"
                 android:text="@string/DescriptionBoxText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"

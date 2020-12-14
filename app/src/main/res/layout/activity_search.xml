@@ -83,6 +83,8 @@
                 android:layout_width="409dp"
                 android:layout_height="616dp"
                 android:layout_marginTop="8dp"
+                android:isScrollContainer="true"
+                android:nestedScrollingEnabled="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
