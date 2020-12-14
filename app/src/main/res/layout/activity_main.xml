@@ -2,6 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -21,19 +22,21 @@
                 android:layout_width="378dp"
                 android:layout_height="202dp"
                 android:layout_marginTop="16dp"
+                android:background="@null"
                 android:contentDescription="@string/app_name"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logoplaceholder"
-                tools:src="@drawable/logoplaceholder" />
+                app:srcCompat="@drawable/shelfawarelogo"
+                tools:src="@drawable/shelfawarelogo" />
 
             <ImageButton
                 android:id="@+id/IBsettings"
                 android:layout_width="172dp"
                 android:layout_height="173dp"
                 android:contentDescription="@string/SettingsImage"
+                android:background="@null"
                 app:layout_constraintBottom_toTopOf="@+id/IVpartition2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -47,7 +50,7 @@
                 android:id="@+id/IBsearch"
                 android:layout_width="179dp"
                 android:layout_height="172dp"
-                android:background="#FFFFFF"
+                android:background="@null"
                 android:contentDescription="@string/SearchIcon"
                 app:layout_constraintBottom_toBottomOf="@+id/IBsettings"
                 app:layout_constraintEnd_toStartOf="@+id/IBsettings"
@@ -73,7 +76,10 @@
                 android:layout_height="148dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
+                android:clickable="true"
                 android:contentDescription="@string/TempBookCover"
+                android:focusable="true"
+
                 app:layout_constraintBottom_toBottomOf="@+id/IVcover2"
                 app:layout_constraintEnd_toStartOf="@+id/IVcover2"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -87,7 +93,10 @@
                 android:layout_width="122dp"
                 android:layout_height="145dp"
                 android:layout_marginBottom="32dp"
+                android:clickable="true"
                 android:contentDescription="@string/TempBookCover"
+                android:focusable="true"
+
                 app:layout_constraintBottom_toBottomOf="@+id/IVshelf"
                 app:layout_constraintEnd_toStartOf="@+id/IVcover3"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -101,7 +110,10 @@
                 android:layout_height="142dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
+                android:clickable="true"
                 android:contentDescription="@string/TempBookCover"
+                android:focusable="true"
+
                 app:layout_constraintBottom_toBottomOf="@+id/IVcover2"
                 app:layout_constraintEnd_toStartOf="@+id/IVshelf"
                 app:layout_constraintHorizontal_bias="0.5"

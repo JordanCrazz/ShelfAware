@@ -14,6 +14,7 @@
         android:fillViewport="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
@@ -21,7 +22,7 @@
             tools:context=".SearchActivity">
 
             <RadioButton
-                android:id="@+id/RBtags"
+                android:id="@+id/RBauthor"
                 android:layout_width="118dp"
                 android:layout_height="34dp"
                 android:contentDescription="@string/TagsRadioButton"
@@ -30,20 +31,6 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/RBtitle"
                 app:layout_constraintTop_toTopOf="@+id/RBtitle" />
-
-            <ScrollView
-                android:id="@+id/SVresults"
-                android:layout_width="384dp"
-                android:layout_height="577dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="#DDD8D8"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/RBtitle">
-
-            </ScrollView>
 
             <RadioButton
                 android:id="@+id/RBtitle"
@@ -54,7 +41,7 @@
                 android:layout_marginRight="16dp"
                 android:contentDescription="@string/TitleRadioButton"
                 android:text="@string/TitleRadioButton"
-                app:layout_constraintEnd_toStartOf="@+id/RBtags"
+                app:layout_constraintEnd_toStartOf="@+id/RBauthor"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/IVbackButton" />
@@ -66,9 +53,10 @@
                 android:background="#D6D6D6"
                 android:contentDescription="@string/EditTextSearch"
                 android:ems="10"
+                android:imeOptions="actionSend"
                 android:importantForAutofill="no"
-                android:inputType="textPersonName"
-                android:text="@string/EditTextSearch"
+                android:inputType="text"
+                android:text=""
                 app:layout_constraintBottom_toBottomOf="@+id/IVbackButton"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -80,12 +68,25 @@
                 android:layout_width="58dp"
                 android:layout_height="47dp"
                 android:layout_marginTop="16dp"
+                android:clickable="true"
                 android:contentDescription="@string/BackButton"
+                android:focusable="true"
+
                 app:layout_constraintEnd_toStartOf="@+id/ETsearch"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/backbutton" />
+
+            <ListView
+                android:id="@+id/LVBooks"
+                android:layout_width="409dp"
+                android:layout_height="616dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RBtitle" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
